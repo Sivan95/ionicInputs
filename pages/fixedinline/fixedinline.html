@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Fixed Labels
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <form (signin) = "processForm()" [formGroup]="form">
+    <ion-list>
+        <ion-item>
+            <ion-label fixed>USERNAME:</ion-label>
+            <ion-input formControlName="username" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>PASSWORD:</ion-label>
+            <ion-input fromControlName="password" type = "password"></ion-input>
+        </ion-item>
+    </ion-list>
+    <div padding>
+        <button ion-button block type = "signin" color="primary" block>Sign In</button>
+    </div>
+    </form>
+</ion-content>
