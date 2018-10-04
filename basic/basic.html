@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            INPUTS
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content position= 'center'>
+    <form (submit)= "processForm()" [formGroup]="form">
+        <ion-list>
+            <ion-item>
+                <ion-input formControlName="firstName" type="text" placeholder="First Name"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input formControlName = "lastName" type="text" placeholder="Last Name"></ion-input>
+            </ion-item>
+        </ion-list>
+        <div padding>
+            <button ion-button block type = "submit">Create Account</button>
+        </div>
+    </form>
+</ion-content>
+
